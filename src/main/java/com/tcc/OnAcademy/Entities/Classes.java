@@ -1,4 +1,4 @@
-package com.tcc.OnAcademy.Entities;
+package com.tcc.OnAcademy.entities;
 
 import java.sql.Date;
 
@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Class {
+public class Classes {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

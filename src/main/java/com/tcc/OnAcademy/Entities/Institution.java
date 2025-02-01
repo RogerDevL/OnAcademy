@@ -1,4 +1,4 @@
-package com.tcc.OnAcademy.Entities;
+package com.tcc.OnAcademy.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
