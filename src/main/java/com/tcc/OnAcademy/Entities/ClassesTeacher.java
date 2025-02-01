@@ -6,25 +6,23 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Notes {
+public class ClassesTeacher {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private Double notasNotes;
-	
-	private String statusNotes;
+	@ManyToOne
+	@JoinColumn(name = "classes_id")
+	private Classes classes;
 	
 	@ManyToOne
-	@JoinColumn(name = "student_id")
-	private Student student;
+	@JoinColumn(name = "teacher_id")
+	private Teacher teacher;
+	
+	
 }

@@ -36,4 +36,8 @@ public class Event {
 	@ManyToOne
 	@JoinColumn(name = "institution_id")
 	private Institution institution;
+	
+	@ManyToOne
+	@JoinColumn(name = "calendar_id")
+	private Calendar calendar;
 }
