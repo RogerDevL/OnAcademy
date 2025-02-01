@@ -1,6 +1,7 @@
 package com.tcc.OnAcademy.Entities;
 
 import java.sql.Date;
+import java.sql.Time;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,20 +9,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Teacher {
-	
-	
+public class Event {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String nomeTeacher;
+	private String tituloEvent;
 	
-	private Date dataNascimentoTeacher;
+	private Date dataEvent;
 	
-	private String emailTeacher;
+	private Time horarioEvent;
 	
-	private String identificadorTeacher;
+	private String localEvent;
 	
-
+	private String descricaoEvent;
 }

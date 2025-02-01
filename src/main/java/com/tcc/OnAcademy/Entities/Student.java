@@ -8,20 +8,20 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Teacher {
-	
-	
+public class Student {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String nomeTeacher;
+	private String nomeStudent;
 	
-	private Date dataNascimentoTeacher;
+	private Date dataNascimentoStudent;
 	
-	private String emailTeacher;
+	private String emailStudent;
 	
-	private String identificadorTeacher;
+	private String telefoneStudent;
 	
-
+	private String matriculaStudent;
+	
 }

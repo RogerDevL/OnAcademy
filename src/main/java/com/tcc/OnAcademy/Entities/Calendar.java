@@ -1,27 +1,25 @@
 package com.tcc.OnAcademy.Entities;
 
-import java.sql.Date;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Teacher {
-	
+public class Calendar {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String nomeTeacher;
+	private int anoCalendar;
 	
-	private Date dataNascimentoTeacher;
+	private int mesCalendar;
 	
-	private String emailTeacher;
+	private String feriadosCalendar;
 	
-	private String identificadorTeacher;
+	private String diasSemanasCalendar;
+	
 	
 
 }
