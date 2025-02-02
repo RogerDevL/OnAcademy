@@ -38,5 +38,8 @@ public class Classes {
 	@OneToMany(mappedBy = "classes")
 	private List<ClassesDisciplinas> classesDisciplinas;
 	
+	@OneToMany(mappedBy = "classes")
+	private List<Feedback> feedBack;
+	
 	
 }

@@ -41,4 +41,6 @@ public class Student {
 	@OneToMany(mappedBy = "student")
 	private List<Notes> notes;
 
+	@OneToMany(mappedBy = "student")
+	private List<StudentFeedBack> studentFeedBack;
 }
